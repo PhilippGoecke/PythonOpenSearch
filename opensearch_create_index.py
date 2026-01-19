@@ -40,3 +40,5 @@ index_body = {
 
 response = client.indices.create(index=index_name, body=index_body)
 print("Index created")
+
+#response = client.indices.delete(index=index_name)
