@@ -33,29 +33,28 @@ index_name = 'my_index'
 search_string = 'Best Pasta Recipes'
 
 # Perform search
+#query = {
+#    'query': {
+#        'match': {
+#            '_all': search_string  # Search across all fields
+#        }
+#    }
+#}
+
+# Alternative: Search in specific field
 query = {
     'query': {
         'match': {
-            '_all': search_string  # Search across all fields
+            'title': search_string
         }
     }
 }
 
-# Alternative: Search in specific field
-# query = {
-#     'query': {
-#         'match': {
-#             'field_name': search_string
-#         }
-#     }
-# }
-
-#q = 'miller'
 #query = {
 #  'size': 5,
 #  'query': {
 #    'multi_match': {
-#      'query': q,
+#      'query': search_string,
 #      'fields': ['title^2', 'director']
 #    }
 #  }
