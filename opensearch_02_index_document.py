@@ -1,6 +1,8 @@
 import json
 from opensearchpy import OpenSearch, helpers
 
+from opensearchpy import OpenSearch
+
 # OpenSearch configuration
 host = 'localhost'
 port = 9200
@@ -34,21 +36,43 @@ index_name = 'my_index'
 data = [
     {
         'id': 1,
-        'title': 'First Document',
-        'content': 'This is the content of the first document',
-        'timestamp': '2024-01-01T10:00:00'
+        'title': 'Introduction to Machine Learning',
+        'content': 'Machine learning is a subset of artificial intelligence that focuses on building systems that learn from data.',
+        'category': 'Technology',
+        'author': 'Jane Smith',
+        'timestamp': '2024-01-15T09:30:00'
     },
     {
         'id': 2,
-        'title': 'Second Document',
-        'content': 'This is the content of the second document',
-        'timestamp': '2024-01-02T11:00:00'
+        'title': 'Best Pasta Recipes',
+        'content': 'Discover authentic Italian pasta recipes including carbonara, aglio e olio, and puttanesca.',
+        'category': 'Food',
+        'author': 'Marco Rossi',
+        'timestamp': '2024-02-20T14:45:00'
     },
     {
         'id': 3,
-        'title': 'Third Document',
-        'content': 'This is the content of the third document',
-        'timestamp': '2024-01-03T12:00:00'
+        'title': 'Climate Change Impact on Polar Bears',
+        'content': 'Rising temperatures in the Arctic are causing significant habitat loss for polar bear populations.',
+        'category': 'Environment',
+        'author': 'Dr. Sarah Johnson',
+        'timestamp': '2024-03-10T16:20:00'
+    },
+    {
+        'id': 4,
+        'title': 'Stock Market Analysis Q1 2024',
+        'content': 'The first quarter showed strong growth in tech sector with major indices reaching new highs.',
+        'category': 'Finance',
+        'author': 'Robert Chen',
+        'timestamp': '2024-04-01T08:00:00'
+    },
+    {
+        'id': 5,
+        'title': 'Ancient Egyptian Architecture',
+        'content': 'Pyramids and temples showcase the advanced engineering capabilities of ancient civilizations.',
+        'category': 'History',
+        'author': 'Prof. Ahmed Hassan',
+        'timestamp': '2024-05-05T11:15:00'
     }
 ]
 
