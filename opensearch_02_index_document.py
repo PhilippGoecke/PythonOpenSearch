@@ -1,8 +1,6 @@
 import json
 from opensearchpy import OpenSearch, helpers
 
-from opensearchpy import OpenSearch
-
 # OpenSearch configuration
 host = 'localhost'
 port = 9200
