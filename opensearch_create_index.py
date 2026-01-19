@@ -17,12 +17,12 @@ client = OpenSearch(
     http_auth = auth,
     #client_cert = client_cert_path,
     #client_key = client_key_path,
-    #use_ssl = True,
+    use_ssl = True,
     #verify_certs = True,
     ssl_assert_hostname = False,
     ssl_show_warn = False,
     #ca_certs = ca_certs_path
-    use_ssl = False,
+    #use_ssl = False,
     verify_certs = False
 )
 
